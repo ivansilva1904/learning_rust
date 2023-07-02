@@ -24,5 +24,12 @@ fn main() {
     //tipos_datos::edad();
     //tipos_datos::maximos();
     //tipos_datos::flotantes();
-    tipos_datos::operaciones();
+    //tipos_datos::operaciones();
+    //tipos_datos::random();
+    //tipos_datos::condicionales_simples();
+    //tipos_datos::operador_ternario();
+    //tipos_datos::operador_match();
+    //tipos_datos::operador_match_ordering();
+    //tipos_datos::arrays1();
+    tipos_datos::arrays2();
 }
