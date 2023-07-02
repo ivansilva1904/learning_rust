@@ -9,6 +9,9 @@ use std::cmp::Ordering;
 
 //Importe de modulos del mismo directorio src
 mod tipos_datos;
+mod condicionales;
+mod ciclos;
+mod estructuras_datos;
 
 fn main() {
     /*let mut nombre = String::new();
@@ -26,10 +29,13 @@ fn main() {
     //tipos_datos::flotantes();
     //tipos_datos::operaciones();
     //tipos_datos::random();
-    //tipos_datos::condicionales_simples();
-    //tipos_datos::operador_ternario();
-    //tipos_datos::operador_match();
-    //tipos_datos::operador_match_ordering();
-    //tipos_datos::arrays1();
-    tipos_datos::arrays2();
+    //condicionales::condicionales_simples();
+    //condicionales::operador_ternario();
+    //condicionales::operador_match();
+    //condicionales::operador_match_ordering();
+    //estructuras_datos::arrays1();
+    //ciclos::arrays2();
+    //ciclos::ciclo_while();
+    //ciclos::ciclo_for();
+    estructuras_datos::tuplas();
 }
