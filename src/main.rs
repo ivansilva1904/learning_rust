@@ -37,5 +37,9 @@ fn main() {
     //ciclos::arrays2();
     //ciclos::ciclo_while();
     //ciclos::ciclo_for();
-    estructuras_datos::tuplas();
+    //estructuras_datos::tuplas();
+    //estructuras_datos::strings1();
+    //estructuras_datos::strings2();
+    estructuras_datos::strings3();
+    //estructuras_datos::strings_a_vector();
 }
