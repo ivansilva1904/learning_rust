@@ -1,4 +1,5 @@
 
+use std::fmt::Display;
 use std::io::{self, stdin};
 use rand::Rng;
 use std::io::{Write, BufReader, BufRead, ErrorKind};
@@ -80,8 +81,8 @@ pub fn strings3(){
 }
 
 pub fn strings_a_vector(){
-    let string6 = String::from("a b c z x y m o p p");
-    let mut vector1: Vec<char> = string6.chars().collect();
+    let string9 = String::from("a b c z x y m o p p");
+    let mut vector1: Vec<char> = string9.chars().collect();
 
     vector1.sort(); //Ordena y borra duplicados
     vector1.dedup();
@@ -91,4 +92,46 @@ pub fn strings_a_vector(){
         print!("{}", letra);
     }
     println!(); //Solo imprime salto de linea
+}
+
+pub fn enums(){ //Enumerated types
+    //Esto define un enum (digamos objeto JSON) con los dias de la semana
+    enum Dia {
+        Lunes,
+        Martes,
+        Miercoles,
+        Jueves,
+        Viernes,
+        Sabado,
+        Domingo
+    }
+
+    //Usas impl que permite implementar funciones segun el elemento de un enum
+    //En este caso tiene una funcion que devuelve true si el dia que se le pasa es sabado o domingo
+    impl Dia{
+        fn fin_de_semana(&self) -> bool {
+            match self {
+                Dia::Sabado | Dia::Domingo => true,
+                _ => false
+            }
+        }
+    }
+
+    //Definis una variable de tipo Dia (objeto JSON) al cual le asignas el elemento lunes
+    let hoy: Dia = Dia::Lunes;
+
+    //Solo estableces un match que imprime un mensaje segun el dia que hayas asignado a la variable hoy
+    match hoy {
+        Dia::Lunes => println!("Odio los lunes"),
+        Dia::Martes => println!("Odio los martes"),
+        Dia::Miercoles => println!("Odio los miercoles"),
+        Dia::Jueves => println!("Odio los jueves"),
+        Dia::Viernes => println!("Odio los viernes"),
+        Dia::Sabado => println!("Odio los sabados"),
+        Dia::Domingo => println!("Me gustan los domingos")
+    }
+
+    //Recien aca se prueba la funcion de la linea 111 usando de nuevo la variable hoy
+    println!("Es finde?: {}", hoy.fin_de_semana());
+
 }

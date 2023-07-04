@@ -40,6 +40,8 @@ fn main() {
     //estructuras_datos::tuplas();
     //estructuras_datos::strings1();
     //estructuras_datos::strings2();
-    estructuras_datos::strings3();
+    //estructuras_datos::strings3();
     //estructuras_datos::strings_a_vector();
+    //tipos_datos::casteo();
+    estructuras_datos::enums();
 }
