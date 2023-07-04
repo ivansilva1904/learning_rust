@@ -135,3 +135,27 @@ pub fn enums(){ //Enumerated types
     println!("Es finde?: {}", hoy.fin_de_semana());
 
 }
+
+pub fn vectores(){
+    let vector1: Vec<i32> = Vec::new();
+    let mut vector2 = vec![1, 2, 3, 4];
+    vector2.push(5); //Empuja un nuevo elemento al final del vector
+
+    println!("Primer elemento del vector 2: {}", vector2[0]);
+
+    //let segundo = vector2[1]; //No es necesario inicializar esta variable
+    let segundo: i32;
+    match vector2.get(1){
+        //Este match solo evalua si existe un segundo elemento en el vector recibido de parametro
+        //Podes cambiar vector2.get(1) por vector1.get(1) para ver las diferencias
+        Some(segundo) => println!("Segundo elemento del vector 2: {}", segundo),
+        None => println!("No hay un segundo elemento en el vector 2")
+    }
+
+    for i in &mut vector2{ //Se coloca &mut para indicar que la variable indice es mutable
+        *i *= 2; //Esto lo que hace es el producto de cada elemento del vector * 2
+    }
+    for i in vector2{
+        println!("{}", i);
+    }
+}

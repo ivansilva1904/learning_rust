@@ -12,6 +12,7 @@ mod tipos_datos;
 mod condicionales;
 mod ciclos;
 mod estructuras_datos;
+mod funciones;
 
 fn main() {
     /*let mut nombre = String::new();
@@ -43,5 +44,18 @@ fn main() {
     //estructuras_datos::strings3();
     //estructuras_datos::strings_a_vector();
     //tipos_datos::casteo();
-    estructuras_datos::enums();
+    //estructuras_datos::enums();
+    //estructuras_datos::vectores();
+    //funciones::hola();
+    //hola_main();
+    //funciones::suma(3, 8);
+    //println!("La suma de 23 y 54 es: {}", funciones::suma2(23, 54));
+    /*let (valor1, valor2) = funciones::devolver_multiples_valores(5);
+    println!("5 + 1 = {} y 5 + 2 = {}", valor1, valor2);*/
+    let lista = vec![2, 3, 4, 5, 6];
+    println!("Suma del vector [2, 3, 4, 5, 6] = {}", funciones::suma_vector(lista));
+}
+
+fn hola_main(){
+    println!("Hola desde el main");
 }
