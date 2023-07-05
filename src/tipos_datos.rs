@@ -1,9 +1,5 @@
 
-use std::io::{self, stdin};
 use rand::Rng;
-use std::io::{Write, BufReader, BufRead, ErrorKind};
-use std::fs::File;
-use std::cmp::Ordering;
 
 pub fn edad(){
     const MILLON: u32 = 1000000;

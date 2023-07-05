@@ -13,6 +13,7 @@ mod condicionales;
 mod ciclos;
 mod estructuras_datos;
 mod funciones;
+mod ownership;
 
 fn main() {
     /*let mut nombre = String::new();
@@ -52,8 +53,13 @@ fn main() {
     //println!("La suma de 23 y 54 es: {}", funciones::suma2(23, 54));
     /*let (valor1, valor2) = funciones::devolver_multiples_valores(5);
     println!("5 + 1 = {} y 5 + 2 = {}", valor1, valor2);*/
-    let lista = vec![2, 3, 4, 5, 6];
-    println!("Suma del vector [2, 3, 4, 5, 6] = {}", funciones::suma_vector(lista));
+    /*let lista = vec![2, 3, 4, 5, 6];
+    println!("Suma del vector [2, 3, 4, 5, 6] = {}", funciones::suma_vector(lista));*/
+    /*println!("5 + 4 = {}", funciones::suma_generico(5, 4));
+    println!("3.4 + 1.6 = {}", funciones::suma_generico(3.4, 1.6));*/
+    //ownership::copiar_strings();
+    //ownership::clonar_strings();
+    ownership::implementar_strings();
 }
 
 fn hola_main(){

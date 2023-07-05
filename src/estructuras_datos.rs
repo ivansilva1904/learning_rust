@@ -1,11 +1,4 @@
 
-use std::fmt::Display;
-use std::io::{self, stdin};
-use rand::Rng;
-use std::io::{Write, BufReader, BufRead, ErrorKind};
-use std::fs::File;
-use std::cmp::Ordering;
-
 pub fn arrays1(){
     let array1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
     println!("Primer elemento: {}", array1[0]);

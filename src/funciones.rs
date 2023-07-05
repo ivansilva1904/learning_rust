@@ -1,11 +1,4 @@
 
-use std::fmt::Display;
-use std::io::{self, stdin};
-use rand::Rng;
-use std::io::{Write, BufReader, BufRead, ErrorKind};
-use std::fs::File;
-use std::cmp::Ordering;
-
 pub fn hola(){
     println!("Hola");
 }
@@ -28,4 +21,12 @@ pub fn suma_vector(vector1: Vec<i32>) -> i32 {
         acumulador += valor;
     }
     acumulador
+}
+
+use std::ops::Add; //Libreria necesaria para trabajar con genericos
+/*Un generico basicamente es un tipo de dato creado por el usuario que puede amoldarse a cualquier
+otro tipo de dato que le pasemos. En el main a esta funcion le pasamos tanto datos enteros como
+flotantes sin problema*/
+pub fn suma_generico<T: Add<Output = T>>(x: T, y: T) -> T {
+    return x + y;
 }

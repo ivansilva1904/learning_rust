@@ -1,10 +1,4 @@
 
-use std::io::{self, stdin};
-use rand::Rng;
-use std::io::{Write, BufReader, BufRead, ErrorKind};
-use std::fs::File;
-use std::cmp::Ordering;
-
 pub fn arrays2(){
     let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let mut indice = 0;
