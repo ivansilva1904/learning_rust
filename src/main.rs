@@ -6,6 +6,7 @@ use rand::Rng;
 use std::io::{Write, BufReader, BufRead, ErrorKind};
 use std::fs::File;
 use std::cmp::Ordering;
+use std::collections::HashMap;
 
 //Importe de modulos del mismo directorio src
 mod tipos_datos;
@@ -14,6 +15,7 @@ mod ciclos;
 mod estructuras_datos;
 mod funciones;
 mod ownership;
+mod estructuras_datos2;
 
 fn main() {
     /*let mut nombre = String::new();
@@ -59,7 +61,12 @@ fn main() {
     println!("3.4 + 1.6 = {}", funciones::suma_generico(3.4, 1.6));*/
     //ownership::copiar_strings();
     //ownership::clonar_strings();
-    ownership::implementar_strings();
+    //ownership::implementar_strings();
+    //estructuras_datos2::hashmap();
+    //estructuras_datos2::hashmap2();
+    //estructuras_datos2::struct1();
+    //estructuras_datos2::struct2();
+    estructuras_datos2::traits1();
 }
 
 fn hola_main(){
