@@ -17,6 +17,9 @@ mod funciones;
 mod ownership;
 mod estructuras_datos2;
 
+mod restaurante;
+use crate::restaurante::ordenar_comida;
+
 fn main() {
     /*let mut nombre = String::new();
     let saludo = "Hola";
@@ -66,7 +69,8 @@ fn main() {
     //estructuras_datos2::hashmap2();
     //estructuras_datos2::struct1();
     //estructuras_datos2::struct2();
-    estructuras_datos2::traits1();
+    //estructuras_datos2::traits1();
+    ordenar_comida();
 }
 
 fn hola_main(){
