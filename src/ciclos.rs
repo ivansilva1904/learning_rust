@@ -30,3 +30,13 @@ pub fn ciclo_for(){
         println!("Elemento: {}", valor); // mientras que for itera hasta que se acaben los valores dentro de este
     }
 }
+
+pub fn iterar_array(){
+    let mut array_iterado = [1, 2, 3, 4];
+    for valor in array_iterado.iter(){
+        println!("{}", valor);
+    }
+
+    let mut iteracion = array_iterado.iter();
+    println!("Primer elemento: {:?}", iteracion.next());
+}

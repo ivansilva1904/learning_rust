@@ -17,6 +17,7 @@ mod funciones;
 mod ownership;
 mod estructuras_datos2;
 mod archivos;
+mod clousures;
 
 mod restaurante;
 use crate::restaurante::ordenar_comida;
@@ -74,7 +75,9 @@ fn main() {
     //ordenar_comida();
     //archivos::error();
     //archivos::archivo_errores();
-    archivos::archivo_errores2();
+    //archivos::archivo_errores2();
+    //ciclos::iterar_array();
+    clousures::clousure1();
 }
 
 fn hola_main(){
