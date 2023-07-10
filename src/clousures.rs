@@ -9,18 +9,48 @@ pub fn clousure1(){
 }
 
 pub fn clousure2(){
-    let mut valor1 = 1; //La variable valor1 y la funcion imprimir_valor estan dentro del mismo scope
-    let imprimir_valor = || println!("Valor 1: {}", valor1); //No es necesario el uso de brackets para una sola sentencia
+    let mut valor1 = 1;
+    println!("valor 1: {}", valor1);
 
-    imprimir_valor();
+    valor1 = 4;
+    let imprimir_valor1 = || println!("Valor 1: {}", valor1); //No es necesario el uso de brackets para una sola sentencia
 
-    //Tengo que clonar a valor1 porque tan solo usarlo en el closure anterior libera su espacio en memoria
-    //En el curso (de hace 11 meses) no era necesario esto
-    let mut valor2 = valor1.clone();
+    imprimir_valor1();
+
+    valor1 = 3;
+
+    let mut valor2 = valor1;
+    println!("valor 2: {}", valor2);
     valor2 = 10;
-    let mut modificar_valor = || println!("{}", valor2);
 
-    imprimir_valor();
+    valor2 = 5;
+    valor2 = 3;
+    let mut imprimir_valor2 = || println!("Nuevo valor de valor 2: {}", valor2);
+
+    imprimir_valor2();
 
     valor2 = 15;
+
+    println!("Valor 2: {}", valor2);
+}
+//Ownership es bastante complicado
+
+pub fn clousure3(){
+    let mut valor1 = 5;
+    let imprimir_valor1 = || println!("Valor 1: {}", valor1);
+
+    imprimir_valor1();
+
+    valor1 = 1;
+
+    let mut modificar_valor1 = || valor1 += 1;
+    
+    modificar_valor1();
+
+    println!("Valor 1: {}", valor1);
+
+    valor1 = 3;
+
+    println!("valor 1: {}", valor1);
+
 }

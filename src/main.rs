@@ -77,7 +77,9 @@ fn main() {
     //archivos::archivo_errores();
     //archivos::archivo_errores2();
     //ciclos::iterar_array();
-    clousures::clousure1();
+    //clousures::clousure1();
+    //clousures::clousure2();
+    clousures::clousure3();
 }
 
 fn hola_main(){
